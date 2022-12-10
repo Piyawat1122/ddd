@@ -8686,5 +8686,16 @@ task.spawn(function()
         end
     end)
 end)
+-- [Bring Mob]
 
+task.spawn(function()
+	while true do wait()
+		if setscriptable then
+			setscriptable(game.Players.LocalPlayer, "SimulationRadius", true)
+		end
+		if sethiddenproperty then
+			sethiddenproperty(game.Players.LocalPlayer, "SimulationRadius", math.huge)
+		end
+	end
+end)
 return library, library_flags, library.subs----อย่าเอาออกไอสัส
